@@ -8,7 +8,7 @@ GET http://localhost:3000/api/products
 
 ### Get a product by ID
 
-GET http://localhost:3000/api/product/6753eb08941ff73ac90011f5
+GET http://localhost:3000/api/products/6753ecfa941ff73ac90011f7
 
 ### Insert a new product
 
@@ -16,16 +16,20 @@ POST http://localhost:3000/api/products
 Content-Type: application/json
 
 {
-    "name": "Product3",
-    "quantity": 40,
-    "price": 1.99
+    "name": "Product4",
+    "quantity": 45,
+    "price": 19.99
 }
 
 ### Update an existing product with an ID
 
-PUT http://localhost:3000/api/product/6753eb08941ff73ac90011f5
+PUT http://localhost:3000/api/products/6754094b025e62dc08bf6e19
 Content-Type: application/json
 
 {
-    "name": "Pizza"
+    "price": 21.99
 }
+
+### Delete an existing Product
+
+DELETE http://localhost:3000/api/products/6754094b025e62dc08bf6e19
