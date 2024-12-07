@@ -1,0 +1,31 @@
+### General get api
+
+GET http://localhost:3000
+
+### Get all the products
+
+GET http://localhost:3000/api/products
+
+### Get a product by ID
+
+GET http://localhost:3000/api/product/6753eb08941ff73ac90011f5
+
+### Insert a new product
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Product3",
+    "quantity": 40,
+    "price": 1.99
+}
+
+### Update an existing product with an ID
+
+PUT http://localhost:3000/api/product/6753eb08941ff73ac90011f5
+Content-Type: application/json
+
+{
+    "name": "Pizza"
+}
